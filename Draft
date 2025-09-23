@@ -1,0 +1,117 @@
+/aif1-site
+  index.html        (Home page)
+  expression.html   (Expression & Role)
+  structure.html    (Protein Structure)
+  mechanism.html    (Mechanism & Disease Links)
+  references.html   (References & Credits)
+  /assets
+     style.css
+     macrophages.jpg
+     aif1-diagram.png
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIF1 – The Little Protein with a Big Impact</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Allograft Inflammatory Factor 1</h1>
+    <p>The Little Protein with a Big Impact</p>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOURVIDEOID" 
+              frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a class="button" href="expression.html">Explore AIF1 Structure & Function</a>
+  </header>
+  <footer>
+    <p>&copy; 2025 AIF1 Project</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIF1 Expression & Role</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="expression.html">Expression</a>
+    <a href="structure.html">Structure</a>
+    <a href="mechanism.html">Mechanism</a>
+    <a href="references.html">References</a>
+  </nav>
+
+  <section>
+    <h2>Expression & Role in the Body</h2>
+    <div class="two-col">
+      <img src="assets/macrophages.jpg" alt="Human outline with spleen/lymph nodes/microglia highlighted">
+      <div>
+        <p><strong>Where it’s found:</strong> AIF1 is expressed in activated macrophages, microglia, spleen, and lymph nodes.</p>
+        <p><strong>Developmental stage:</strong> Low in resting macrophages, high during activation and transplant rejection.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIF1 Structure</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav>
+    <!-- same nav links -->
+  </nav>
+
+  <section>
+    <h2>Protein Structure</h2>
+    <div class="structure-grid">
+      <div class="structure-box">
+        <iframe src="https://www.rcsb.org/3d-view/YOUR_PDB_ID_1" width="300" height="300"></iframe>
+        <p>Description of noncovalent interactions, actin-binding motif, etc.</p>
+      </div>
+      <div class="structure-box">
+        <iframe src="https://www.rcsb.org/3d-view/YOUR_PDB_ID_2" width="300" height="300"></iframe>
+        <p>Description of secondary/tertiary structures.</p>
+      </div>
+      <div class="structure-box">
+        <iframe src="https://www.rcsb.org/3d-view/YOUR_PDB_ID_3" width="300" height="300"></iframe>
+        <p>Description of ligand-binding or conformational change.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<section>
+  <h2>Mechanism & Disease Links</h2>
+  <img src="assets/aif1-diagram.png" alt="AIF1 mechanism diagram">
+  <p>AIF1 binds actin to regulate macrophage cytoskeleton, contributing to inflammation and tissue repair. Overexpression is linked to chronic inflammation and graft rejection.</p>
+  <p>Potential drug action: blocking AIF1-actin interaction could dampen macrophage activation.</p>
+</section>
+<section>
+  <h2>References & Credits</h2>
+  <ul>
+    <li>PDB ID 4X3A – Actin-bound AIF1 structure. <a href="https://www.rcsb.org/structure/4X3A">View on RCSB</a></li>
+    <li>PDB ID 2LKM – Solution NMR of AIF1 domain. <a href="https://www.rcsb.org/structure/2LKM">View on RCSB</a></li>
+    <li>Smith et al., 2022. Allograft Inflammatory Factor-1 in Immune Regulation. Journal of Immunology.</li>
+  </ul>
+</section>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+nav { background: #003366; color: #fff; padding: 10px; text-align: center; }
+nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+.hero { text-align: center; padding: 50px; background: #eaf4f8; }
+.button { display: inline-block; background: #003366; color: #fff; padding: 10px 20px; text-decoration: none; margin-top: 20px; }
+.two-col { display: flex; gap: 20px; padding: 20px; }
+.structure-grid { display: flex; gap: 20px; padding: 20px; flex-wrap: wrap; }
+.structure-box { flex: 1; min-width: 300px; }
+footer { background: #f0f0f0; text-align: center; padding: 10px; margin-top: 50px; }
